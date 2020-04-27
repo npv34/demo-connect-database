@@ -1,6 +1,6 @@
 <?php
 
-
+require '../config.php';
 class DBConnect
 {
     protected $username;
@@ -8,8 +8,8 @@ class DBConnect
 
     public function __construct()
     {
-        $this->username = 'root';
-        $this->password = '123456@Abc';
+        $this->username = USERNAME;
+        $this->password = PASSWORD;
     }
 
     public function connect()
